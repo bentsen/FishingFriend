@@ -1,7 +1,8 @@
 # FishingFriend
 //////////////////////////////////////// WARNING ////////////////////////////////////////
 <br />
-IS NOT TO BE USED FOR EVERYDAY USE AND SHOULD ONLY BE USED IN MODERATION AND/OR FOR EXPERIMENTING WITH JAVA.ROBOT
+IS NOT TO BE USED FOR EVERYDAY USE AND 
+SHOULD ONLY BE USED IN MODERATION AND/OR FOR EXPERIMENTING WITH JAVA.ROBOT
 <br />
 //////////////////////////////////////// INFO ////////////////////////////////////////
 <br />
