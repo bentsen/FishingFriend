@@ -11,19 +11,19 @@ Made only for educational and experimental purposes.
 <br />
 //////////////////// HOW-TO ////////////////////
 <br />
-To use our fishing friend proceed with following instructions
+To use our fishing friend proceed with following instructions:
 <br />
-> Open program
+- Open program
 <br />
-> DONT PRESS START YET
+- DONT PRESS START YET
 <br />
-> Open game
+- Open game
 <br />
-> Zoom all the way in, so it's only the water that's in frame
+- Zoom all the way in, so it's only the water that's in frame
 <br />
-> Proceed to press START
+- Proceed to press START
 <br />
-> Enjoy
+- Enjoy
 <br />
 ////////////////////////////////////////////////////////////
 <br />
