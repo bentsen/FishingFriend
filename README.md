@@ -13,7 +13,7 @@ Made only for educational and experimental purposes.
 <br />
 To use our fishing friend proceed with following instructions:
 <br />
-- Open program
+<p>- Open program</p>
 <br />
 - DONT PRESS START YET
 <br />
