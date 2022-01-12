@@ -11,7 +11,7 @@ Made only for educational and experimental purposes.
 <br />
 //////////////////// HOW-TO ////////////////////
 <br />
-To use our fishing friend proceed with following instructions:
+To use our fishing friend proceed with following instructions
 <br />
 > Open program
 <br />
