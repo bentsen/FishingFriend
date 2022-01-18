@@ -1,5 +1,8 @@
 # FishingFriend
 ![image](https://user-images.githubusercontent.com/78900612/150030165-08816228-09a1-4925-86de-bdfb9ac89b58.png)
+
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+
 //////////////////////////////////////// WARNING ////////////////////////////////////////
 <br />
 IS NOT TO BE USED FOR EVERYDAY USE AND 
