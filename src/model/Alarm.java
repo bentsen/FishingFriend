@@ -1,61 +1,65 @@
 package model;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /*
  * Name: Mikkel Bentsen && Oliver rasoli
  * Date: 1/16/2022
  */
 
-
-import controller.Controller;
-
-public class Alarm implements Runnable
+public class Alarm
 {
-    private Thread thread;
-    private boolean running = false;
-    private final Angle angle = new Angle();
+    /*Countdown time in seconds*/
+    private final int time;
+    /*Action when countdown ends*/
+    private final Listener listener;
+    /*New thread*/
+    private final ExecutorService exec = Executors.newSingleThreadExecutor();
 
-    @Override
-    public void run() {
-        int timet = 25 * 60;
+    public Alarm(final int time, final Listener listener)
+    {
+        this.time = time;
+        this.listener = listener;
+    }
+
+    /*Countdown method*/
+    public void run()
+    {
+        int timet = time;
         long delay = timet * 1000;
 
-        do{
+        do
+        {
             int minutes = timet / 60;
             int seconds = timet % 60;
             System.out.println(minutes + " minute(s), " + seconds + " Second(s)");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                break;
             }
             timet = timet - 1;
             delay = delay - 1000;
         }
         while (delay != 0);
-        Controller.fishing = false;
     }
 
-    public synchronized void start()
+    /*Cancel countdown*/
+    public void cancel()
     {
-        if(running)
-            return;
-        running = true;
-        thread = new Thread(this);
-        thread.start();
+        exec.shutdownNow();
     }
-
-    public synchronized void stop()
+    /*Start countdown*/
+    public void start()
     {
-        if(!running)
-            return;
-        running = false;
-        try
+        assert !exec.isShutdown();
+
+        exec.submit(()->
         {
-            thread.join();
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
+            run();
+            listener.listen();
+        });
+        exec.shutdown();
     }
 }

@@ -14,12 +14,13 @@ import static java.awt.event.KeyEvent.*;
 /** Kyeboard class convert string to keyEvents */
 public class Keyboard
 {
-    private final Computer computer = Computer.INSTANCE;
-    private final Robot robot = computer.getBot();
+
+    /*Robot so we can communicate with hardware*/
+    private final Robot robot = Computer.INSTANCE.getBot();
 
 
-
-    public void type(CharSequence characters) {
+    public void type(CharSequence characters)
+    {
         int length = characters.length();
         for (int i = 0; i < length; i++) {
             char character = characters.charAt(i);
@@ -27,7 +28,8 @@ public class Keyboard
         }
     }
 
-    public void type(char character) {
+    public void type(char character)
+    {
         switch (character) {
             case 'a': doType(VK_A); break;
             case 'b': doType(VK_B); break;
@@ -131,12 +133,15 @@ public class Keyboard
         }
     }
 
-    private void doType(int... keyCodes) {
+    private void doType(int... keyCodes)
+    {
         doType(keyCodes, 0, keyCodes.length);
     }
 
-    private void doType(int[] keyCodes, int offset, int length) {
-        if (length == 0) {
+    private void doType(int[] keyCodes, int offset, int length)
+    {
+        if (length == 0)
+        {
             return;
         }
         robot.delay(1000);

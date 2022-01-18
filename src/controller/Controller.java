@@ -1,46 +1,49 @@
 package controller;
 
-import model.Alarm;
-import model.Angle;
+import javafx.application.Platform;
 
-import java.awt.*;
-import java.awt.event.InputEvent;
+import model.singleton.Angle;
+import model.singleton.Computer;
 
-public class Controller {
 
-    public static Alarm alarm = new Alarm();
-    public static Angle angle = new Angle();
-    public static boolean fishing = true;
+/*
+ * Name: Mikkel Bentsen && Oliver rasoli
+ * Date: 1/16/2022
+ */
 
-    public static void main(String[] args) throws AWTException
+public enum Controller
+{
+    /*Makes Controller Singleton*/
+    INSTANCE;
+
+    /*Start fishing session*/
+    public void start()
     {
-        Robot bot = new Robot();
-        bot.delay(2000);
-        while(true)
+        if(Angle.INSTANCE.isReady())
         {
-            alarm.start();
-            while(fishing)
-            {
-                angle.castLoop();
-                bot.delay(2000);
-                while (!angle.coordinates()) {
-                    angle.coordinates();
-                }
-                angle.move(angle.bobber);
-                while (true) {
-                    if (angle.fish()) {
-                        System.out.println("jeg klikker");
-                        bot.delay(1000);
-                        bot.mousePress(InputEvent.BUTTON3_DOWN_MASK);
-                        bot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
-                        angle.move(angle.startLocation);
-                        bot.delay(1000);
-                        break;
-                    }
-                }
-            }
-            alarm.stop();
-            angle.reconnect();
+            Angle.INSTANCE.fish();
+        }
+    }
+    /*Stop fishing session*/
+    public void stop()
+    {
+
+        if(!Angle.INSTANCE.isReady())
+        {
+            Angle.INSTANCE.interrupt();
+        }
+    }
+    /*Close program*/
+    public void close()
+    {
+        if(!Angle.INSTANCE.isReady())
+        {
+            Angle.INSTANCE.interrupt();
+            Platform.exit();
+        }
+        else
+        {
+            Platform.exit();
         }
     }
 }
