@@ -6,9 +6,9 @@
 The bot will automaticly throw the lure in the water when needed, by pressing the key '4'. So from start you should put you fishing abillity at the fourth slot in you action bar.
 
 
-the bot uses color recognition to look for both the the red feather on the bobber but also to detect when a catch is ready by looking for the color of the splash effect the game uses.
+The bot uses color recognition to look for both the the red feather on the bobber but also to detect when a catch is ready by looking for the color of the splash effect the game uses.
 
-even though the bot cant be detected by bot/tool detection systems, a player might be red flaged if standing still fishing for around 30 minutes. Therefore the bot will insure you saftly by doing a relog every 25 min which would resest the counter. 
+Even though the bot cant be detected by bot/tool detection systems, a player might be red flaged if standing still fishing for around 30 minutes. Therefore the bot will insure you saftly by doing a relog every 25 min which would reset the counter. 
 
 ## How to use the bot
 
@@ -17,7 +17,7 @@ even though the bot cant be detected by bot/tool detection systems, a player mig
 3. Face you character with the water - (It is recommended to zoom in completely for at better guaranty of the bot noticing the colors )
 4. Press start and let the program take control over your mouse and keyboard - (dont disturb the program) 
 5. Remember the bot is at bot and the user also need to take some choices for the bot the have better quality
-6. go to sleep or watch netflix :)
+6. Go to sleep or watch netflix :)
 
 //////////////////////////////////////// WARNING ////////////////////////////////////////
 <br />
