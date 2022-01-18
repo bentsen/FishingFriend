@@ -21,6 +21,6 @@ Even though the bot cant be detected by bot/tool detection systems, a player mig
 
 //////////////////////////////////////// Made By ////////////////////////////////////////
 <br />
-Bean
+[Bean](https://github.com/bentsen).
 <br />
-Snoopsie
+[Snoopsie](https://github.com/Snoopsie1).
