@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fb4f4fd-f731-4c88-a7fd-9b733536b97d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wowBot/model/Alarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wowBot/model/Alarm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wowBot/model/singleton/Angle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wowBot/model/singleton/Angle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Alarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/singleton/Angle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/singleton/Angle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +154,7 @@
       <workItem from="1642370440359" duration="3841000" />
       <workItem from="1642374353133" duration="17527000" />
       <workItem from="1642499887870" duration="32880000" />
-      <workItem from="1642540807909" duration="1589000" />
+      <workItem from="1642540807909" duration="1923000" />
     </task>
     <servers />
   </component>
