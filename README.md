@@ -17,7 +17,7 @@ Even though the bot cant be detected by bot/tool detection systems, a player mig
 3. Face you character with the water - (It is recommended to zoom in completely for at better guaranty of the bot noticing the colors )
 4. Press start and let the program take control over your mouse and keyboard - (dont disturb the program) 
 5. Remember the bot is at bot and the user also need to take some choices for the bot the have better quality
-6. Go to sleep or watch netflix :)
+6. Do something in the world outside of world of warcraft
 
 ## In mind for the future
 - User choice for keybindings 
