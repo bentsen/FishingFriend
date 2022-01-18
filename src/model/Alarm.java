@@ -33,7 +33,7 @@ public class Alarm
         {
             int minutes = timet / 60;
             int seconds = timet % 60;
-            System.out.println(minutes + " minute(s), " + seconds + " Second(s)");
+            ///77System.out.println(minutes + " minute(s), " + seconds + " Second(s)");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

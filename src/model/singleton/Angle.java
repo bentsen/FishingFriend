@@ -45,14 +45,14 @@ public enum Angle
         {
             computer.getBot().delay(2000);
             /*30 min and relog will fire*/
-            final Alarm alarm = new Alarm(1500, () -> reconnect());
-            alarm.start();
+            //final Alarm alarm = new Alarm(1500, () -> reconnect());
+            //alarm.start();
 
             while(!isInterrupted())
             {
-                computer.getBot().delay(2000);
+
                 move(startLocation);
-                computer.getBot().delay(2000);
+
                 if(lure.isReady())
                 {
                     lure.applyLure();
@@ -61,14 +61,12 @@ public enum Angle
                 /*25 seconds to get bobber or lambda event will fire*/
                 final Alarm alarm2 = new Alarm(25, () -> interruptFishing());
                 alarm2.start();
-
                 coordinates();
                 bobbercatch();
 
                 alarm2.cancel();
-                lure.setReady(true);
             }
-            alarm.cancel();
+            //alarm.cancel();
         });
 
     }
@@ -88,10 +86,12 @@ public enum Angle
                 {
                     if (Computer.SplashColor(Computer.parseByteColor(bufferedImage.getRGB(i, j))))
                     {
+                        System.out.println("Splash!");
                         move(bobberLocation);
                         computer.getBot().delay(500);
                         computer.getBot().mousePress(InputEvent.BUTTON3_DOWN_MASK);
                         computer.getBot().mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
+                        lure.setReady(true);
                         return true;
                     }
                 }
