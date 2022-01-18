@@ -10,6 +10,8 @@ The bot uses color recognition to look for both the the red feather on the bobbe
 
 Even though the bot cant be detected by bot/tool detection systems, a player might be red flaged if standing still fishing for around 30 minutes. Therefore the bot will insure you saftly by doing a relog every 25 min which would reset the counter. 
 
+The user interface created for the program is under maintaince and dosent have any great features besides start- stop- and closeing the program.
+
 ## How to use the bot
 
 1. Open World of Warcraft - fullscreen windows mode
