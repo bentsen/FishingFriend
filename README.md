@@ -19,6 +19,11 @@ Even though the bot cant be detected by bot/tool detection systems, a player mig
 5. Remember the bot is at bot and the user also need to take some choices for the bot the have better quality
 6. Go to sleep or watch netflix :)
 
+## In mind for the future
+- User choice for keybindings 
+- Console log
+- timer displayed on GUI
+
 //////////////////////////////////////// Made By ////////////////////////////////////////
 <br />
 [Bean](https://github.com/bentsen).
