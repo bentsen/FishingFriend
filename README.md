@@ -3,6 +3,14 @@
 
 ## About the bot
 
+
+## How to use the bot
+
+1. Open game
+2. Open Program
+3. Press start near water
+4. easy!
+
 //////////////////////////////////////// WARNING ////////////////////////////////////////
 <br />
 IS NOT TO BE USED FOR EVERYDAY USE AND 
