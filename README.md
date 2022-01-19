@@ -1,4 +1,4 @@
-# FishingFriend - NOT WORKING YET
+# FishingFriend
 ![image](https://user-images.githubusercontent.com/78900612/150030165-08816228-09a1-4925-86de-bdfb9ac89b58.png)
 
 ## About the bot
@@ -8,7 +8,7 @@ The bot will automaticly throw the lure in the water when needed, by pressing th
 
 The bot uses color recognition to look for both the the red feather on the bobber but also to detect when a catch is ready by looking for the color of the splash effect the game uses.
 
-Even though the bot cant be detected by bot/tool detection systems, a player might be red flaged if standing still fishing for around 30 minutes. Therefore the bot will insure you saftly by doing a relog every 25 min which would reset the counter. 
+Even though the bot cant be detected by bot/tool detection systems, a player might be red flaged if standing still fishing for around 30 minutes. Therefore the bot will insure you saftly by doing a relog every 25 min which would reset the counter (This feature is still under devolopment and dosent work atm.). 
 
 The user interface created for the program is under maintaince and dosent have any great features besides start- stop- and closeing the program.
 
