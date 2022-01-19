@@ -43,13 +43,13 @@ public enum Angle
         exec = Executors.newSingleThreadExecutor();
         exec.submit(()->
         {
-            computer.getBot().delay(2000);
-            /*30 min and relog will fire*/
+            /*30 min and relog will fire(Todo fix)*/
             //final Alarm alarm = new Alarm(1500, () -> reconnect());
             //alarm.start();
 
             while(!isInterrupted())
             {
+                sleep(5000);
 
                 move(startLocation);
 
@@ -118,6 +118,7 @@ public enum Angle
                     {
                         System.out.println("color found");
                         bobberLocation = new Point(i + width, j + height);
+                        System.out.println("bobberlocation: x="+bobberLocation.getX() + ",y="+bobberLocation.getY());
                         return true;
                     }
                 }
@@ -138,6 +139,11 @@ public enum Angle
     /*Reconnect character*/
     public void reconnect()
     {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         interrupt();
         Robot bot = computer.getBot();
         bot.keyPress(KeyEvent.VK_ENTER);
@@ -188,5 +194,16 @@ public enum Angle
     {
         assert !isInterrupted();
         exec.shutdownNow();
+    }
+    /*Sleep the fishing thread*/
+    private void sleep(int time)
+    {
+        try
+        {
+            Thread.sleep(time);
+        } catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
     }
 }

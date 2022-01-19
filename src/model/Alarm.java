@@ -33,11 +33,11 @@ public class Alarm
         {
             int minutes = timet / 60;
             int seconds = timet % 60;
-            ///77System.out.println(minutes + " minute(s), " + seconds + " Second(s)");
+            System.out.println(minutes + " minute(s), " + seconds + " Second(s)");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
-                break;
+                Thread.currentThread().stop();
             }
             timet = timet - 1;
             delay = delay - 1000;
@@ -48,6 +48,7 @@ public class Alarm
     /*Cancel countdown*/
     public void cancel()
     {
+        System.out.println("Alarm got cancel");
         exec.shutdownNow();
     }
     /*Start countdown*/
@@ -58,6 +59,7 @@ public class Alarm
         exec.submit(()->
         {
             run();
+            System.out.println("der blev ikke funder noget");
             listener.listen();
         });
         exec.shutdown();
