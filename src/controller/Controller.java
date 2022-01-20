@@ -33,17 +33,4 @@ public enum Controller
             Angle.INSTANCE.interrupt();
         }
     }
-    /*Close program*/
-    public void close()
-    {
-        if(!Angle.INSTANCE.isReady())
-        {
-            Angle.INSTANCE.interrupt();
-            Platform.exit();
-        }
-        else
-        {
-            Platform.exit();
-        }
-    }
 }
