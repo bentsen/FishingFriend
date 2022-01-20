@@ -24,7 +24,7 @@ The user interface created for the program is under maintaince and dosent have a
 ## In mind for the future
 - User choice for keybindings 
 - Console log
-- timer displayed on GUI
+- timer displayed on GUI ![check](https://user-images.githubusercontent.com/78900612/150360054-08263100-0718-42c8-b8d3-db5ca6f898b8.png)
 
 //////////////////////////////////////// Made By ////////////////////////////////////////
 <br />
