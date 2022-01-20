@@ -1,5 +1,8 @@
 package model;
 
+import javafx.application.Platform;
+import view.Time;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -34,6 +37,12 @@ public class Alarm
             int minutes = timet / 60;
             int seconds = timet % 60;
             System.out.println(minutes + " minute(s), " + seconds + " Second(s)");
+
+            /*will post the Runnable to an event queue and then return immediately to the caller. ... Otherwise, the application may become unresponsive.*/
+            /*returns time of alarm to GUI*/
+            // TODO: 1/20/2022 fix so only the relog time will use the line under (maybe a if statement that check if time is 1500 seconds).
+            Platform.runLater(()-> Time.INSTANCE.setTime(minutes + ":" + seconds));
+
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
