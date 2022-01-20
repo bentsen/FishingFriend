@@ -28,9 +28,10 @@ The user interface created for the program is under maintaince and dosent have a
 - Console log ![cross](https://user-images.githubusercontent.com/78900612/150360484-8cbbb0d2-8e22-4cc9-9427-0624837187e9.png)
 - timer displayed on GUI ![check](https://user-images.githubusercontent.com/78900612/150360054-08263100-0718-42c8-b8d3-db5ca6f898b8.png)
 
-|Ready|Not ready|
+|Pros|Cons|
 |--|--|
-|<table> <tr><th>Timer displayed on GUI</th><th>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png)</th></tr><tr><td></td>User choice for keybindings<td>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png)</td></tr><tr><td></td>Console log<td>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png) </td></tr> </table>|
+|<table> <tr><th>User choice for keybindings</th><th>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png)</th></tr><tr><td>Console log</td><td>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png)</td></tr><tr><td>timer displayed on GUI</td><td>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png) </td></tr> </table>|
+
 //////////////////////////////////////// Made By ////////////////////////////////////////
 <br />
 [Bean](https://github.com/bentsen).
