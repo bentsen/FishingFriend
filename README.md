@@ -22,8 +22,10 @@ The user interface created for the program is under maintaince and dosent have a
 6. Do something in the world outside of world of warcraft
 
 ## In mind for the future
-- User choice for keybindings 
-- Console log
+![cross](https://user-images.githubusercontent.com/78900612/150360484-8cbbb0d2-8e22-4cc9-9427-0624837187e9.png) = Not ready
+![check](https://user-images.githubusercontent.com/78900612/150360054-08263100-0718-42c8-b8d3-db5ca6f898b8.png) = ready
+- User choice for keybindings ![cross](https://user-images.githubusercontent.com/78900612/150360484-8cbbb0d2-8e22-4cc9-9427-0624837187e9.png)
+- Console log ![cross](https://user-images.githubusercontent.com/78900612/150360484-8cbbb0d2-8e22-4cc9-9427-0624837187e9.png)
 - timer displayed on GUI ![check](https://user-images.githubusercontent.com/78900612/150360054-08263100-0718-42c8-b8d3-db5ca6f898b8.png)
 
 //////////////////////////////////////// Made By ////////////////////////////////////////
