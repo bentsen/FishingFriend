@@ -128,7 +128,7 @@ public class GUI extends Application
         {Controller.INSTANCE.start(); imageView.setVisible(true); stop.setVisible(true); start.setVisible(false);});
         stop.setOnAction(e ->
         {Controller.INSTANCE.stop(); imageView.setVisible(false); start.setVisible(true); stop.setVisible(false);});
-        close.setOnAction(e -> Controller.INSTANCE.close());
+        close.setOnAction(e -> stage.close());
 
         /*Adding all elements to AnchorPane/GUI */
         pane.styleProperty().set("-fx-background-color: #181818");
