@@ -1,9 +1,11 @@
 package model.singleton;
 
 
+import javafx.application.Platform;
 import model.Alarm;
 import model.Keyboard;
 import model.Lure;
+import view.Console;
 
 import java.awt.*;
 import java.awt.event.InputEvent;
@@ -86,7 +88,7 @@ public enum Angle
                 {
                     if (Computer.SplashColor(Computer.parseByteColor(bufferedImage.getRGB(i, j))))
                     {
-                        System.out.println("Splash!");
+                        Platform.runLater(() -> Console.INSTANCE.setConsoleOutput("fish was caught"));
                         move(bobberLocation);
                         computer.getBot().delay(500);
                         computer.getBot().mousePress(InputEvent.BUTTON3_DOWN_MASK);
@@ -116,9 +118,11 @@ public enum Angle
                 {
                     if (Computer.isMatch(Computer.parseByteColor(bufferedImage.getRGB(i, j))))
                     {
-                        System.out.println("color found");
                         bobberLocation = new Point(i + width, j + height);
-                        System.out.println("bobberlocation: x="+bobberLocation.getX() + ",y="+bobberLocation.getY());
+                        Platform.runLater(() -> {
+                            Console.INSTANCE.setConsoleOutput("color found");
+                            Console.INSTANCE.setConsoleOutput("Bobberlocation: x="+bobberLocation.getX() + ",y="+bobberLocation.getY());
+                        });
                         return true;
                     }
                 }
@@ -139,12 +143,12 @@ public enum Angle
     /*Reconnect character*/
     public void reconnect()
     {
+        interrupt();
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        interrupt();
         Robot bot = computer.getBot();
         bot.keyPress(KeyEvent.VK_ENTER);
         bot.keyRelease(KeyEvent.VK_ENTER);

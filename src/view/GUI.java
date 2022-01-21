@@ -64,7 +64,7 @@ public class GUI extends Application
         final Text fishingAbilityHead = new Text("Fishing Ability");
         final Text startHead = new Text("Start");
         final Text stopHead = new Text("Stop");
-        final TextArea textArea = new TextArea("");
+        final TextArea textArea = Console.INSTANCE.getOutput();
         final TextArea hotkeyFishing = new TextArea("4");
         final TextArea hotkeyStart = new TextArea();
         final TextArea hotkeyStop = new TextArea();
@@ -128,11 +128,13 @@ public class GUI extends Application
         scrollPane.setPrefHeight(150);
         scrollPane.setLayoutX(35);
         scrollPane.setLayoutY(60);
+        scrollPane.setStyle("-fx-vbar-policy: NEVER;");
         stage.setOnShown(e -> scrollPane.lookup(".viewport").setStyle("-fx-background-color: #242424;"));
 
         /*TextArea settings/styling. */
         textArea.setId("textArea");
         textArea.setEditable(false);
+        textArea.setWrapText(true);
         textArea.setStyle("-fx-control-inner-background:#242424; -fx-text-box-border: #242424; -fx-focus-color: #242424;");
 
         /*ImageView settings/styling. */
