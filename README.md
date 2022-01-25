@@ -1,5 +1,5 @@
 # FishingFriend
-![image](https://user-images.githubusercontent.com/78900612/150030165-08816228-09a1-4925-86de-bdfb9ac89b58.png)
+![image](https://user-images.githubusercontent.com/78900612/150899308-063adee0-b8a1-46a2-bfa7-a9f7839c63e0.png)
 
 ## About the bot
 
