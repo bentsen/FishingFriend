@@ -25,8 +25,8 @@ The user interface created for the program is under maintaince and dosent have a
 Check = ready <br/> Cross = not ready <table> <tr><td>Timer display on GUI</td><td>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png)</td></tr><tr><td>User choice for keybindings</td><td>![cross](https://user-images.githubusercontent.com/78900612/150360484-8cbbb0d2-8e22-4cc9-9427-0624837187e9.png)</td></tr><tr><td>Console log on GUI</td><td>![check-8](https://user-images.githubusercontent.com/78900612/110119026-804fc580-7dbb-11eb-90d1-3cea3bcff255.png)</td></tr> </table>
 
 ## Contributors
-- [Bean](https://github.com/bentsen).
+-  [Bean](https://github.com/bentsen).
 <br />
-- [Snoopsie](https://github.com/Snoopsie1).
+-  [Snoopsie](https://github.com/Snoopsie1).
 <br />
-- [Freddiiy](https://github.com/Freddiiy).
+-  [Freddiiy](https://github.com/Freddiiy).
