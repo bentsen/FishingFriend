@@ -29,3 +29,5 @@ Check = ready <br/> Cross = not ready <table> <tr><td>Timer display on GUI</td><
 [Bean](https://github.com/bentsen).
 <br />
 [Snoopsie](https://github.com/Snoopsie1).
+<br />
+[Freddiiy](https://github.com/Freddiiy).
