@@ -2,7 +2,10 @@ package view;
 
 import controller.Controller;
 import javafx.application.Application;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -19,7 +22,7 @@ import java.io.File;
 
 /*
  * Name: Mikkel Bentsen && Oliver rasoli
- * Date: 1/16/2022
+ * Date: 25/16/2022
  */
 
 public class GUI extends Application
@@ -39,12 +42,13 @@ public class GUI extends Application
         final AnchorPane root = createPane(stage);
         final Scene scene = new Scene(root);
 
+        /*style sheet*/
+        scene.getStylesheets().add(new File("src/main/resources/css/style.css").toURI().toString());
 
         /*Window setup*/
         stage.getIcons().add(new Image(new File("src/main/resources/images/icon.png").toURI().toString()));
         stage.setResizable(false);
         stage.setTitle("Fishing Friend");
-
         stage.setWidth(WINDOW_WIDTH);
         stage.setHeight(WINDOW_HEIGHT);
         stage.setScene(scene);
@@ -74,30 +78,31 @@ public class GUI extends Application
         labelRelog.setVisible(true);
         labelRelog.setLayoutX(55);
         labelRelog.setLayoutY(475);
-        labelRelog.setTextFill(Color.WHITE);
+        labelRelog.setTextFill(Color.rgb(226, 226, 226));
 
         /*Text for start hotkey*/
         startHead.setLayoutX(217);
         startHead.setLayoutY(380);
-        startHead.setFill(Color.WHITE);
+        startHead.setFill(Color.rgb(226, 226, 226));
 
         /*Text for stop hotkey*/
         stopHead.setLayoutX(367);
         stopHead.setLayoutY(380);
-        stopHead.setFill(Color.WHITE);
+        stopHead.setFill(Color.rgb(226, 226, 226));
 
         /*Text for fishing hotkey*/
         fishingAbilityHead.setLayoutX(70);
         fishingAbilityHead.setLayoutY(380);
-        fishingAbilityHead.setFill(Color.WHITE);
+        fishingAbilityHead.setFill(Color.rgb(226, 226, 226));
 
         /*Text for hotkey header*/
         hotkeys.setLayoutX(180);
         hotkeys.setLayoutY(350);
         hotkeys.setStyle("-fx-font: 24 arial;");
-        hotkeys.setFill(Color.DARKGRAY);
+        hotkeys.setFill(Color.rgb(226, 226, 226));
 
         /*Text Area for fishing hotkey*/
+        hotkeyFishing.setId("hotkey");
         hotkeyFishing.setLayoutY(390);
         hotkeyFishing.setLayoutX(80);
         hotkeyFishing.setMaxHeight(1);
@@ -116,19 +121,18 @@ public class GUI extends Application
         hotkeyStop.setMaxWidth(10);
 
         /*Text console settings/styling. */
-        console.setLayoutX(180);
+        console.setLayoutX(185);
         console.setLayoutY(40);
         console.setStyle("-fx-font: 24 arial;");
-        console.setFill(Color.DARKGRAY);
+        console.setFill(Color.rgb(226, 226, 226));
 
         /*Scrollpane settings/styling. */
         scrollPane.setFitToWidth(true);
         scrollPane.setPrefWidth(400);
         scrollPane.setPrefHeight(150);
-        scrollPane.setLayoutX(35);
+        scrollPane.setLayoutX(30);
         scrollPane.setLayoutY(60);
         scrollPane.setStyle("-fx-vbar-policy: NEVER;");
-        stage.setOnShown(e -> scrollPane.lookup(".viewport").setStyle("-fx-background-color: #242424;"));
 
         /*TextArea settings/styling. */
         textArea.setId("textArea");
@@ -148,7 +152,6 @@ public class GUI extends Application
         imageView.setVisible(false);
 
         /*Button(Start) settings/styling. */
-        start.setId("startButton");
         start.setCursor(Cursor.HAND);
         start.setMinHeight(40);
         start.setMinWidth(110);
@@ -156,10 +159,8 @@ public class GUI extends Application
         start.setMaxWidth(110);
         start.setLayoutX(70);
         start.setLayoutY(250);
-        start.setStyle("-fx-background-color: #242424; -fx-font-size: 16; -fx-text-fill: white; -fx-alignment: center;");
 
         /*Button(Stop) settings/styling. */
-        stop.setId("stopButton");
         stop.setCursor(Cursor.HAND);
         stop.setMinHeight(40);
         stop.setMinWidth(110);
@@ -168,10 +169,8 @@ public class GUI extends Application
         stop.setLayoutX(70);
         stop.setLayoutY(250);
         stop.setVisible(false);
-        stop.setStyle("-fx-background-color: #242424; -fx-font-size: 16; -fx-text-fill: white; -fx-alignment: center;");
 
         /*Button(Close) settings/styling. */
-        close.setId("closeButton");
         close.setCursor(Cursor.HAND);
         close.setMinHeight(40);
         close.setMinWidth(110);
@@ -179,7 +178,6 @@ public class GUI extends Application
         close.setMaxWidth(110);
         close.setLayoutX(280);
         close.setLayoutY(250);
-        close.setStyle("-fx-background-color: #242424; -fx-font-size: 16; -fx-text-fill: white; -fx-alignment: center;");
 
         /*Lambda actions on button clicks*/
         start.setOnAction(e ->

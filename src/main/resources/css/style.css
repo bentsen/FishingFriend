@@ -1,3 +1,32 @@
+
 .root{
-    -fx-background: rgb(79, 77, 81);
+    -fx-background-image: url("../images/background.png");
+    -fx-background-size: cover;
+}
+
+.button{
+    -fx-font-weight: bold;
+    -fx-background-color: #242424;
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.button:hover{
+    -fx-border-color: white;
+}
+
+.scroll-pane{
+    -fx-background-color: #181818;
+    -fx-opacity: 0.9;
+}
+
+.text-area{
+    text-area-background: #181818;
+    -fx-opacity: 0.9;
+    -fx-text-fill: white;
+}
+.text-area .content{
+    -fx-background-color: text-area-background;
+    -fx-opacity: 0.9;
 }
