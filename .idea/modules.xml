@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FishingFriendmvn.iml" filepath="$PROJECT_DIR$/FishingFriendmvn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FishingFriend.iml" filepath="$PROJECT_DIR$/FishingFriend.iml" />
     </modules>
   </component>
 </project>
